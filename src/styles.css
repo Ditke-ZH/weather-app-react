@@ -1,0 +1,93 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+div {
+  display: block;
+}
+.weather-app-wrapper {
+  margin: 20px auto;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+.weather-app {
+  background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 2px #dadde1;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.row {
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  padding: 0px 0px;
+  margin-bottom: 0px;
+}
+h2,
+h3 {
+  font-size: 50px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+.description {
+  margin: 0 auto;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+p {
+  font-size: 18px;
+  margin: 0px 0px;
+}
+.current-date {
+  font-size: 25px;
+  padding-bottom: 0px;
+  margin: 0px 0px;
+}
+.row-2 {
+  padding: 0px 0px;
+}
+
+.middle-icon {
+  font-size: 25px;
+}
+hr {
+  position: relative;
+  height: 10px;
+  background: white;
+  border-radius: 5px;
+}
+.weather-forecast {
+  margin-top: 20px;
+}
+.weather-forecast-date {
+  font-size: 20px;
+}
+.weather-forecast-icon {
+  font-size: 20px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+.footer {
+  font-size: 12px;
+  padding-top: 40px;
+}
+.personal-link {
+  color: white;
+}
+a:link {
+  color: white;
+}
+a:hover {
+  color: black;
+}

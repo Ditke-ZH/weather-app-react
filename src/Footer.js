@@ -8,6 +8,7 @@ export default function Footer() {
         <a
           href="https://github.com/Ditke-ZH/weather-app-react"
           target="_blank"
+          rel="noreferrer"
           title="Open-source code"
           id="personal-link"
         >
@@ -17,6 +18,7 @@ export default function Footer() {
         <a
           href="https://www.linkedin.com/in/edit-guntermann-563357104"
           target="_blank"
+          rel="noreferrer"
           title="Edit Guntermann"
           id="personal-link"
         >

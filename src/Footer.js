@@ -13,8 +13,8 @@ export default function Footer() {
           id="personal-link"
         >
           Open-source code
-        </a>
-        by
+        </a>{" "}
+        by{" "}
         <a
           href="https://www.linkedin.com/in/edit-guntermann-563357104"
           target="_blank"

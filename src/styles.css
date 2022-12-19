@@ -82,10 +82,7 @@ hr {
   font-size: 12px;
   padding-top: 40px;
 }
-.personal-link {
-  color: white;
-}
-a:link {
+a {
   color: white;
 }
 a:hover {

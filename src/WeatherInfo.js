@@ -25,11 +25,11 @@ export default function WeatherInfo(props) {
       </p>
       <div className="container" id="weather-properties">
         <div className="row row-2">
-          <div className="col air-property">
-            Wind speed <span id="wind">{props.data.wind}</span> km/h
+          <div className="col weather-properties">
+            Wind speed: <span id="wind">{props.data.wind}</span> km/h
           </div>
-          <div className="col">
-            Humidity <span id="humidity">{props.data.humidity}</span> %
+          <div className="col weather-properties">
+            Humidity: <span id="humidity">{props.data.humidity}</span>%
           </div>
         </div>
       </div>
@@ -50,6 +50,7 @@ export default function WeatherInfo(props) {
           </div>
         </div>
       </div>
+      <hr />
     </div>
   );
 }

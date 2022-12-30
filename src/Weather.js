@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherTemperature from "./WeatherTemperature";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
@@ -105,6 +106,7 @@ export default function Weather(props) {
                   type="button"
                   className="btn btn-outline-light"
                   id="celsius"
+                  //onClick={showCelsius}
                 >
                   °C
                 </button>
@@ -112,6 +114,7 @@ export default function Weather(props) {
                   type="button"
                   className="btn btn-outline-light"
                   id="fahrenheit"
+                  //onClick={showFahrenheit}
                 >
                   °F
                 </button>

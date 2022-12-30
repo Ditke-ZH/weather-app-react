@@ -31,5 +31,4 @@ export function SunriseSunsetTime(props) {
       </div>
     </div>
   );
-  getTime();
 }

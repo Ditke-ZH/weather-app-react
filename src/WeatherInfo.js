@@ -12,7 +12,7 @@ export default function WeatherInfo(props) {
       </h1>
       <h2>
         <div>
-          <WeatherIcon code={props.data.icon} size={52} />
+          <WeatherIcon code={props.data.icon} size={82} />
         </div>
       </h2>
       <div id="description" className="text-capitalize">
@@ -41,7 +41,9 @@ export default function WeatherInfo(props) {
               <i className="fa-solid fa-sunrise middle-icon sunrise-icon"></i>{" "}
             </div>
             Sunrise |
-            <GetTime time={props.sunriseTime} />
+            <span id="sunrise">
+              <GetTime time={props.sunriseTime} />
+            </span>
           </div>
           <div className="col-5"></div>
           <div className="col">

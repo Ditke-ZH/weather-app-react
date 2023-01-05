@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
-import WeatherTemperature from "./WeatherTemperature";
+import UnitConversion from "./UnitConversion";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
@@ -94,33 +94,7 @@ export default function Weather(props) {
               </button>
             </div>
           </div>
-          <div className="row">
-            <div className="col-8"></div>
-            <div className="col-4">
-              <div
-                className="btn-group btn-group-sm"
-                role="group"
-                aria-label="..."
-              >
-                <button
-                  type="button"
-                  className="btn btn-outline-light"
-                  id="celsius"
-                  onClick={() => this.props.showCelsius(this.state)}
-                >
-                  °C
-                </button>
-                <button
-                  type="button"
-                  className="btn btn-outline-light"
-                  id="fahrenheit"
-                  onClick={() => this.props.showFahrenheit(this.state)}
-                >
-                  °F
-                </button>
-              </div>
-            </div>
-          </div>
+          <UnitConversion celsius={props.data.temperature} />
         </div>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />

@@ -2,8 +2,8 @@ import React from "react";
 import { getTime } from "./library";
 
 export default function SunriseSunsetTime(props) {
-  let sunriseFormatTime = getTime(props.sunriseTime, props.timezone);
-  let sunsetFormatTime = getTime(props.sunsetTime, props.timezone);
+  let sunriseFormatTime = getTime(props.data.sunriseTime, props.data.timezone);
+  let sunsetFormatTime = getTime(props.data.sunsetTime, props.data.timezone);
 
   return (
     <div className="SunriseSunsetTime SunriseSunsetWrapper">

@@ -34,7 +34,7 @@ export default function WeatherInfo(props) {
           </div>
         </div>
       </div>
-      <SunriseSunsetTime />
+      <SunriseSunsetTime data={props.data} />
 
       <hr />
     </div>

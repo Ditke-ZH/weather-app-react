@@ -2,7 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
-import GetTime from "./GetTime";
+import SunriseSunsetTime from "./SunriseSunsetTime";
 
 export default function WeatherInfo(props) {
   return (
@@ -34,26 +34,8 @@ export default function WeatherInfo(props) {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="row row-2">
-          <div className="col">
-            <div>
-              <i className="fa-solid fa-sunrise middle-icon sunrise-icon"></i>{" "}
-            </div>
-            Sunrise |
-            <span id="sunrise">
-              <GetTime time={props.sunriseTime} />
-            </span>
-          </div>
-          <div className="col-5"></div>
-          <div className="col">
-            <div>
-              <i className="fa-solid fa-sunset middle-icon sunset-icon"></i>
-            </div>
-            Sunset | <span id="sunset">21:15</span>
-          </div>
-        </div>
-      </div>
+      <SunriseSunsetTime />
+
       <hr />
     </div>
   );

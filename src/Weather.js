@@ -106,7 +106,7 @@ export default function Weather(props) {
                   type="button"
                   className="btn btn-outline-light"
                   id="celsius"
-                  //onClick={showCelsius}
+                  onClick={() => this.props.showCelsius(this.state)}
                 >
                   °C
                 </button>
@@ -114,7 +114,7 @@ export default function Weather(props) {
                   type="button"
                   className="btn btn-outline-light"
                   id="fahrenheit"
-                  //onClick={showFahrenheit}
+                  onClick={() => this.props.showFahrenheit(this.state)}
                 >
                   °F
                 </button>

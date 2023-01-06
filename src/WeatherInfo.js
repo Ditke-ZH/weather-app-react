@@ -7,7 +7,7 @@ import SunriseSunsetTime from "./SunriseSunsetTime";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1 id="city" className="animate__animated animate__flip">
+      <h1 id="city" className="MainCity">
         {props.data.city}
       </h1>
       <h2>
@@ -35,7 +35,6 @@ export default function WeatherInfo(props) {
         </div>
       </div>
       <SunriseSunsetTime data={props.data} />
-
       <hr />
     </div>
   );
